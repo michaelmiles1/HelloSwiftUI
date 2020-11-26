@@ -10,6 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            Image("gatlinburgtn")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(50)
+                .padding(.all)
+            
             Text("First Line")
                 .font(.largeTitle)
                 .foregroundColor(.blue)
@@ -18,11 +24,11 @@ struct ContentView: View {
                 .font(.title)
                 .foregroundColor(.red)
             
-            HStack {
+            HStack(alignment: .center) {
                 Text("Left Side")
                 Text("Right Side")
-                    .padding()
             }
+            .padding()
         }
     }
 }
